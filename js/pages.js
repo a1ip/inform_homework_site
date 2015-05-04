@@ -3,7 +3,7 @@ var pages = {}
 pages.main_div = '#content'; // контейнер для страниц
 pages.all = '.page'; // селектор для выбора всех страниц
 pages.changeto_events = {} // для событий по смене страницы
-pages.default_page = '';
+pages.default_page = 'home';
 
 
 /**
