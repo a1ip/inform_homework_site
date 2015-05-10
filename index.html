@@ -9,6 +9,7 @@
         
     <link rel="stylesheet" href="http://static.clienddev.ru/clienddev_bootstrap/3.1.1/bootstrap.min.css">
     <link rel="stylesheet" href="http://static.clienddev.ru/font-awesome/4.3.0/font-awesome.min.css">
+    <link rel="stylesheet" href="http://yastatic.net/highlightjs/8.2/styles/arta.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -476,6 +477,37 @@
                     <p>Окон­ча­тель­ный вид =С$2+$B4.</p>
                      
                     <p>Пра­виль­ный ответ ука­зан под но­ме­ром 1.</p>
+                    
+                <h2>Задание 8</h2>
+                
+                    <p>Опре­де­ли­те, что будет на­пе­ча­та­но в ре­зуль­та­те ра­бо­ты сле­ду­ю­ще­го фраг­мен­та про­грам­мы:</p>
+                    <pre><code class="pascal">var k, s: integer;
+begin
+    s:=0;
+    k:=0;
+    while k < 30 do begin
+        k:=k+3;
+        s:=s+k;
+    end;
+    write(s);
+end.</code></pre>
+                    
+                    <hr>
+                    <p>Цикл while вы­пол­ня­ет­ся до тех пор, пока ис­тин­но усло­вие k < 30, т. е. пе­ре­мен­ная k опре­де­ля­ет, сколь­ко раз вы­пол­нит­ся цикл.</p>
+                    <p>Так как по­сле­до­ва­тель­ность k пред­став­ля­ет собой ариф­ме­ти­че­скую про­грес­сию, най­дем n из не­ра­вен­ства:</p>
+                    <p>
+                        <img src="content/tasks/08/1.png" alt="">
+                        <i>k<sub>1</sub> = 0</i>, <i>d = 3</i> (т. к. k := k + 3).
+                        Вос­поль­зо­вав­шись ме­то­дом ин­тер­ва­лов, на­хо­дим пер­вое на­ту­раль­ное n, при ко­то­ром на­ру­ша­ет­ся усло­вие:
+                        <i>n = 11</i>.
+                    </p>
+                    <p>
+                        Зна­че­ние s есть сумма пер­вых n чле­нов ариф­ме­ти­че­ской про­грес­сии.
+                        <img src="content/tasks/08/2.png" alt="">,
+                        b — сумма пер­вых n чле­нов про­грес­сии, d — раз­ность про­грес­сии, n — ко­ли­че­ство чле­нов.
+                    </p>
+                    <p><img src="content/tasks/08/3.png" alt=""></p>
+                
             </div>
             <div data-page="test" class="page">
                 <h1>Тест</h1>
@@ -524,6 +556,7 @@
     
     <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://yastatic.net/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="http://yastatic.net/highlightjs/8.2/highlight.min.js"></script>
     <script src="js/pages.js"></script>
     <script src="js/run.js"></script>
 </body>
