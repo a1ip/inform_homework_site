@@ -39,7 +39,13 @@ var test_answers = {
         right_answer: 165
     },
     9: {
-        right_answer: 1 
+        answers: [
+            '10 cек',
+            '30 сек',
+            '50 сек',
+            '75 сек'
+        ],
+        right_answer: 0 // индексация с 0
     },
     10: {
         right_answer: 1 

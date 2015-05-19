@@ -382,9 +382,9 @@ end.</code></pre>
         <h3 class="panel-title">Задание 9</h3>
     </div>
     <div class="panel-body">
-        
+        <p>Про­во­ди­лась од­но­ка­наль­ная (моно) зву­ко­за­пись с ча­сто­той дис­кре­ти­за­ции 16 кГц и 32-бит­ным раз­ре­ше­ни­ем. В ре­зуль­та­те был по­лу­чен файл раз­ме­ром 1 Мбайт, сжа­тие дан­ных не про­из­во­ди­лось. Какая из при­ве­ден­ных ниже ве­ли­чин наи­бо­лее близ­ка к вре­ме­ни, в те­че­ние ко­то­ро­го про­во­ди­лась за­пись?</p>
     </div>
-    <div class="panel-footer answers input" data-id="9"></div>
+    <div class="panel-footer answers" data-id="9"></div>
 </div>
 <div class="panel panel-default task">
     <div class="panel-heading">
