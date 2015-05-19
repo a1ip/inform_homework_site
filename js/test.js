@@ -30,13 +30,7 @@ var test_answers = {
         right_answer: 3 // индексация с 0
     },
     6: {
-        answers: [
-            'x1 ∧ x2 ∧ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬x7',
-            '¬x1 ∨ ¬x2 ∨ x3 ∨ ¬x4 ∨ ¬x5 ∨ x6 ∨ ¬x7',
-            '¬x1 ∧ x2 ∧ ¬x3 ∧ x4 ∧ x5 ∧ x6 ∧ x7',
-            'x1 ∨ x2 ∨ ¬ x3 ∨ ¬x4 ∨ x5 ∨ ¬x6 ∨ x7'
-        ],
-        right_answer: 3 // индексация с 0
+        right_answer: 11212 // индексация с 0
     },
     7: {
         answers: [
@@ -54,26 +48,33 @@ function test_render(){
         var $this = $(this);
         var id = $this.data('id');
         
-        var html = '<ol>';
+        var html = '';
         
-            for(var key in test_answers[id].answers)
-                html +='<li>'+
-                            '<label>'+
-                                '<input type="radio" name="test' + id + '" id="test' + id + '" value="' + key + '"> ' +
-                                    test_answers[id].answers[key] +
-                            '</label>' +
-                        '</li>';
+        if ($this.hasClass('input')) {
+            html += '<input type="text' + id + '" id="test" class="form-control" placeholder="Введите ответ">'
+        }
+        else{
+            html += '<ol>';
             
-        html += '</ol>';
-        
+                for(var key in test_answers[id].answers)
+                    html +='<li>'+
+                                '<label>'+
+                                    '<input type="radio" name="test' + id + '" id="test' + id + '" value="' + key + '"> ' +
+                                        test_answers[id].answers[key] +
+                                '</label>' +
+                            '</li>';
+                
+            html += '</ol>';
+        }
         $this.html(html);
     });
     test_handlers();
 }
 
 function test_handlers(){
-    $('.answers input').click(function(){
+    $('.answers.input input').keyup(function(){
         var $this = $(this);
+        
         var $answers = $this.closest('.answers');
         var task_id = $answers.data('id');
         var right_answer = test_answers[task_id].right_answer;
@@ -85,6 +86,23 @@ function test_handlers(){
             task.addClass('panel-success');
         else
             task.addClass('panel-danger');
+            
+        return true;
+    });
+    $('.answers:not(.input) input').click(function(){
+        var $this = $(this);
+        var $answers = $this.closest('.answers');
+        var task_id = $answers.data('id');
+        var right_answer = test_answers[task_id].right_answer;
+        var task = $answers.closest('.task');
+        
+        task.removeClass('panel-default').removeClass('panel-success').removeClass('panel-danger');
+    
+        if (right_answer == $this.val()) 
+            task.addClass('panel-success');
+        else
+            task.addClass('panel-danger');
+        
     })
 }
 
