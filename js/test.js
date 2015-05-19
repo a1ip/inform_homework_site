@@ -48,7 +48,7 @@ var test_answers = {
         right_answer: 0 // индексация с 0
     },
     10: {
-        right_answer: 1 
+        right_answer: 24 
     },
 }
 
