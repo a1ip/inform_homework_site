@@ -360,21 +360,31 @@
 </div>
 <div class="panel panel-default task">
     <div class="panel-heading">
-        <h3 class="panel-title">Задание 1</h3>
+        <h3 class="panel-title">Задание 8</h3>
     </div>
     <div class="panel-body">
-        <p>Для ко­ди­ро­ва­ния букв Д, X, Р, О, В ре­ши­ли ис­поль­зо­вать дво­ич­ное пред­став­ле­ние чисел 0, 1, 2, 3 и 4 со­от­вет­ствен­но (с со­хра­не­ни­ем од­но­го не­зна­ча­ще­го нуля в слу­чае од­но­раз­ряд­но­го пред­став­ле­ния). Если за­ко­ди­ро­вать по­сле­до­ва­тель­ность букв ХО­РО­ВОД таким спо­со­бом и ре­зуль­тат за­пи­сать вось­ме­рич­ным кодом, то по­лу­чит­ся</p>
+        <p>Опре­де­ли­те, что будет на­пе­ча­та­но в ре­зуль­та­те ра­бо­ты сле­ду­ю­ще­го фраг­мен­та про­грам­мы:</p>
+        <pre><code class="pascal">var k, s: integer;
+begin
+    s:=0;
+    k:=0;
+    while k < 30 do begin
+        k:=k+3;
+        s:=s+k;
+    end;
+    write(s);
+end.</code></pre>
     </div>
-    <div class="panel-footer answers" data-id="1"></div>
+    <div class="panel-footer answers input" data-id="8"></div>
 </div>
 <div class="panel panel-default task">
     <div class="panel-heading">
-        <h3 class="panel-title">Задание 1</h3>
+        <h3 class="panel-title">Задание 9</h3>
     </div>
     <div class="panel-body">
-        <p>Для ко­ди­ро­ва­ния букв Д, X, Р, О, В ре­ши­ли ис­поль­зо­вать дво­ич­ное пред­став­ле­ние чисел 0, 1, 2, 3 и 4 со­от­вет­ствен­но (с со­хра­не­ни­ем од­но­го не­зна­ча­ще­го нуля в слу­чае од­но­раз­ряд­но­го пред­став­ле­ния). Если за­ко­ди­ро­вать по­сле­до­ва­тель­ность букв ХО­РО­ВОД таким спо­со­бом и ре­зуль­тат за­пи­сать вось­ме­рич­ным кодом, то по­лу­чит­ся</p>
+        
     </div>
-    <div class="panel-footer answers" data-id="1"></div>
+    <div class="panel-footer answers input" data-id="9"></div>
 </div>
 <div class="panel panel-default task">
     <div class="panel-heading">

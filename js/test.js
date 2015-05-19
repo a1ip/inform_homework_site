@@ -30,19 +30,19 @@ var test_answers = {
         right_answer: 3 // индексация с 0
     },
     6: {
-        right_answer: 11212 // индексация с 0
+        right_answer: 11212 
     },
     7: {
-        right_answer: 1 // индексация с 0
+        right_answer: 1 
     },
     8: {
-        right_answer: 1 // индексация с 0
+        right_answer: 165
     },
     9: {
-        right_answer: 1 // индексация с 0
+        right_answer: 1 
     },
     10: {
-        right_answer: 1 // индексация с 0
+        right_answer: 1 
     },
 }
 
@@ -54,7 +54,7 @@ function test_render(){
         var html = '';
         
         if ($this.hasClass('input')) {
-            html += '<input type="text' + id + '" id="test" class="form-control" placeholder="Введите ответ">'
+            html += '<input type="text" id="test' + id + '" class="form-control" placeholder="Введите ответ">'
         }
         else{
             html += '<ol>';
