@@ -33,13 +33,16 @@ var test_answers = {
         right_answer: 11212 // индексация с 0
     },
     7: {
-        answers: [
-            'x1 ∧ x2 ∧ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬x7',
-            '¬x1 ∨ ¬x2 ∨ x3 ∨ ¬x4 ∨ ¬x5 ∨ x6 ∨ ¬x7',
-            '¬x1 ∧ x2 ∧ ¬x3 ∧ x4 ∧ x5 ∧ x6 ∧ x7',
-            'x1 ∨ x2 ∨ ¬ x3 ∨ ¬x4 ∨ x5 ∨ ¬x6 ∨ x7'
-        ],
-        right_answer: 3 // индексация с 0
+        right_answer: 1 // индексация с 0
+    },
+    8: {
+        right_answer: 1 // индексация с 0
+    },
+    9: {
+        right_answer: 1 // индексация с 0
+    },
+    10: {
+        right_answer: 1 // индексация с 0
     },
 }
 
