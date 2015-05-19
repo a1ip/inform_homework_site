@@ -963,7 +963,7 @@ END
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Об­ласть</td>
+                                <th>Об­ласть</th>
                                 <th>Усло­вие 1
                                 (x*x+y*y&gt;=4)
                                 </th>

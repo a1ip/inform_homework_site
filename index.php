@@ -7,8 +7,10 @@
     <meta name="Keywords" content="информатика, егэ, 2015">
     <meta name="Author" content="atnartur">
         
-    <link rel="stylesheet" href="http://static.clienddev.ru/clienddev_bootstrap/3.1.1/bootstrap.min.css">
-    <link rel="stylesheet" href="http://static.clienddev.ru/font-awesome/4.3.0/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="http://static.clienddev.ru/clienddev_bootstrap/3.1.1/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="http://static.clienddev.ru/font-awesome/4.3.0/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://yastatic.net/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://yastatic.net/highlightjs/8.2/styles/default.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -49,13 +51,11 @@
             </div>
             <div data-page="tasks" class="page">
                 <h1>Разбор заданий</h1>
-                
                 <?php include 'parts/tasks.php'; ?>
             </div>
             <div data-page="test" class="page">
                 <h1>Тест</h1>
-                <p>Первая часть теста включает 13 заданий (А1–А13). К каждому из них даны четыре варианта ответа, из которых нужно выбрать один правильный.</p>
-                <p>Вторая часть теста состоит из 15 заданий. Ответы к этим заданиям вы должны сформулировать самостоятельно.</p>
+                <?php include 'parts/test.php'; ?>
             </div>
             <div data-page="about" class="page">
                 <h1>О сайте</h1>
@@ -101,6 +101,7 @@
     <script src="http://yastatic.net/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="http://yastatic.net/highlightjs/8.2/highlight.min.js"></script>
     <script src="js/pages.js"></script>
+    <script src="js/test.js"></script>
     <script src="js/run.js"></script>
 </body>
 </html>
