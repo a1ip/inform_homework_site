@@ -26,12 +26,7 @@ var test_answers = {
         right_answer: 2 // индексация с 0
     },
     5: {
-        answers: [
-            'x1 ∧ x2 ∧ x3 ∧ x4 ∧ x5 ∧ x6 ∧ ¬x7',
-            '¬x1 ∨ ¬x2 ∨ x3 ∨ ¬x4 ∨ ¬x5 ∨ x6 ∨ ¬x7',
-            '¬x1 ∧ x2 ∧ ¬x3 ∧ x4 ∧ x5 ∧ x6 ∧ x7',
-            'x1 ∨ x2 ∨ ¬ x3 ∨ ¬x4 ∨ x5 ∨ ¬x6 ∨ x7'
-        ],
+        answers: [1,2,3,4],
         right_answer: 3 // индексация с 0
     },
     6: {
